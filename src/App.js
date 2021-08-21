@@ -4,7 +4,8 @@ import TopSection from './components/top/top';
 import BottomSection from './components/bottom/bottom';
 import axios from 'axios'
 //ключ API
-const CONTACT_API_KEY = 'bd8bf644fa9b915dbfd92801fb105f10'
+require('dotenv').config()
+const API_KEY = process.env.REACT_APP_CONTACT_API_KEY
 
 
 class App extends React.Component {
@@ -19,8 +20,9 @@ class App extends React.Component {
   updateWeather(){
     // data request
     const {city} = this.state
+    console.log(process.env)
     const api = {
-      key: CONTACT_API_KEY,
+      key: API_KEY,
       base: 'http://api.openweathermap.org/data/2.5/weather'
     }
 
