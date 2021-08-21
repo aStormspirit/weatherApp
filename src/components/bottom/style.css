@@ -1,0 +1,5 @@
+#bottom{
+    background: linear-gradient(180deg, #6abeca 0%, rgba(58, 98, 104, 0.57) 100%),
+    url(../../img/sunny-weather.jpeg) center no-repeat;
+    background-size: cover;
+}
