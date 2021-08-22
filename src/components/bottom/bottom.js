@@ -1,16 +1,12 @@
 import React from 'react';
 import './style.css'
+// svg
 import wind from '../../img/wind-svgrepo-com.svg'
 import compass from '../../img/compass-symbol.svg'
 
-export default class BottomSection extends React.Component {
-  constructor(props){
-    super(props)
-  }
-           
+const BottomSection = (props) => {
 
-    render() {
-      const {speedWind, deg} = this.props
+      const {speedWind, deg} = props
         
       function getDeg(){
         if(25<=deg>340){
@@ -47,5 +43,7 @@ export default class BottomSection extends React.Component {
               <p className='text-2xl pt-7 pl-4 text-white'>wind direction: {getDeg()}</p>
               </div>
         </div>
-    }
+    
 }
+
+export default BottomSection;

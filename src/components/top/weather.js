@@ -1,12 +1,8 @@
 import React from 'react'
 
-export default class Weather extends React.Component{
-    constructor(props){
-        super(props);
 
-    }
-    render() {
-        const {temp, city, text, icon} = this.props
+const Weather = (props) => {
+        const {temp, city, text, icon} = props
         const img = `http://openweathermap.org/img/wn/${icon}@2x.png`
         
         return (
@@ -20,4 +16,5 @@ export default class Weather extends React.Component{
             </div>
         )
     }
-}
+
+export default Weather
