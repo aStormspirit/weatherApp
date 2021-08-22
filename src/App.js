@@ -4,7 +4,6 @@ import TopSection from './components/top/top';
 import BottomSection from './components/bottom/bottom';
 import axios from 'axios'
 //ключ API
-require('dotenv').config()
 const API_KEY = process.env.REACT_APP_CONTACT_API_KEY
 
 
