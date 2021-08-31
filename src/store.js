@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 // emiter
 import { EventEmitter } from "events";
 
+
 export default class Store extends Component{
 
     constructor(props){

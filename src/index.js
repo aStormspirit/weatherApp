@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App1 from './App1'
 // store
 import Store from './store'
+import Stor from './stor'
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Store><App /></Store>
+    <Store><App1 /></Store>
   </React.StrictMode>,
   document.getElementById('root')
 );
